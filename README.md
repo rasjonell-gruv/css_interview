@@ -5,5 +5,5 @@
 ## The Task
 
 - Fork the project
-- Make the project identical to the [design](https://www.figma.com/file/7i3SgApUj2AIAqEf6wywFy/ARMENIAN-STATE-SYMPHONY-ORCHESTRA?node-id=0%3A1)
+- Make the project identical to the [design](https://www.figma.com/file/AcxBAEU5cj8DpFJjm71jIr/ARMENIAN-STATE-SYMPHONY-ORCHESTRA?node-id=0%3A1)
 - Open a PR to the original project
