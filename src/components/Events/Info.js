@@ -11,7 +11,7 @@ const Info = ({ datePicked }) => {
   return (
     <div className={classes.info}>
       <SmallBanner image={getImage(datePicked)} />
-      <EventDescription date={datePicked} />
+      {/* <EventDescription date={datePicked} /> */}
     </div>
   );
 };

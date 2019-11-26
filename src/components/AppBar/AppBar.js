@@ -5,6 +5,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
+import Grid from '@material-ui/core/Grid';
 
 import useStyles from "./styles";
 
@@ -22,24 +23,32 @@ const _AppBar = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.headerBar} position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Gruv Interview
-          </Typography>
-          {menuItems.map(item => (
-            <Button color="inherit" key={item}>
-              {item}
-            </Button>
-          ))}
+          <Grid container direction="row" justify="space-between" alignItems="center">
+            <Grid item>
+              <Grid container alignItems="center">
+                <Grid item>
+                  <Typography className={classes.title}>
+                    POA
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography className={classes.name}>
+                    The Philarmonic <br /> Orchestra of Armenia
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item className={classes.menus}>
+              {menuItems.map(item => (
+                <Button color="inherit" key={item}>
+                  {item}
+                </Button>
+              ))}
+            </Grid>
+            <MenuIcon className={classes.burgerMenu} />
+          </Grid>
         </Toolbar>
       </AppBar>
     </div>
